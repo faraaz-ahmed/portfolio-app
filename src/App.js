@@ -14,7 +14,8 @@ const Background = styled.div`
 	// background-image: url(${(props) => props.backgroundImage});
 	background: ${(props) => props.background.field1 ?? ''};
 	background: ${(props) => props.background.field2 ?? ''};
-	height: 100vh;
+	height: 120vh;
+	width: 100rem;
 `;
 
 export const CustomText = styled.div`
