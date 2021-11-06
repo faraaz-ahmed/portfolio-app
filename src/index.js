@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import BrowserRouter from 'react-router-dom/BrowserRouter';
+import { BrowserRouter } from 'react-router-dom/';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
-				<App />
-			</BrowserRouter>
+			{/* <BrowserRouter basename={window.location.pathname || ''}> */}
+			<App />
+			{/* </BrowserRouter> */}
 		</Provider>
 	</React.StrictMode>,
 	document.getElementById('root')
