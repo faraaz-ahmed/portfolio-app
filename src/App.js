@@ -15,6 +15,8 @@ const Background = styled.div`
 	background: ${(props) => props.background.field1 ?? ''};
 	background: ${(props) => props.background.field2 ?? ''};
 	height: 200vh;
+	// padding: -1rem !important;
+	// margin: -1rem !important;
 `;
 
 export const CustomText = styled.div`
