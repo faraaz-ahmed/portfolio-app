@@ -1,8 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import HomeNavBar from './components/navbar';
 import styled from 'styled-components';
-// import { getGlobalStyles } from '../../AppConstants';
 import { useSelector } from 'react-redux';
 import { CustomText } from '../../../App';
 import { getGlobalStyles } from '../../../AppConstants';
@@ -11,20 +7,6 @@ import { FlexRowContainer } from '../CustomCss';
 import { changeProjectIndex } from '../../../store/actions/CardIndexAction';
 import { useDispatch } from 'react-redux';
 import { TEMPLATE_CONSTANTS } from '../../../TemplateConstants';
-// import { TEMPLATE_CONSTANTS } from '../../../TemplateConstants';
-
-const Heading = styled.div`
-	font-size: 2.5rem;
-`;
-
-const Subheading = styled.div`
-	font-size: 0.8rem;
-`;
-
-const Paragraph = styled.div`
-	align: center;
-	font-size: 1rem;
-`;
 
 const CardContainer = styled.div`
 	margin: 5rem 20rem 10rem 20rem;
@@ -57,12 +39,6 @@ const CustomProjectCard = ({ project = {} }) => {
 		);
 	};
 
-	const dispatchOnTabClick = (projectIndex, e) => {
-		// console.log('tab dispatch', tab);
-		dispatch(changeProjectIndex(projectIndex));
-		e.preventDefault();
-		// currentTab = useSelector(state => state.tab);
-	};
 	return (
 		<>
 			<CardContainer>
@@ -97,7 +73,10 @@ const CustomProjectCard = ({ project = {} }) => {
 							</Card.Text>
 							<Card.Text>
 								<CustomText size='1rem' colour={globalStyles.textColour}>
-									Github Link: <a>{githubLink}</a>
+									Github Link:{' '}
+									<a href={githubLink} target='_blank' rel='noreferrer'>
+										{githubLink}
+									</a>
 								</CustomText>
 							</Card.Text>
 							<Card.Text>
@@ -105,7 +84,6 @@ const CustomProjectCard = ({ project = {} }) => {
 									page: {`${projectIndex + 1}/${projects.length}`}
 								</CustomText>
 							</Card.Text>
-							{/* <Button variant="primary">Go somewhere</Button> */}
 						</Card.Body>
 					</Card>
 					<Button variant={globalStyles.button.variant} onClick={onClickNext}>

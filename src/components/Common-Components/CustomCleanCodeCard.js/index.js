@@ -1,8 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import HomeNavBar from './components/navbar';
 import styled from 'styled-components';
-// import { getGlobalStyles } from '../../AppConstants';
 import { useSelector } from 'react-redux';
 import { CustomText } from '../../../App';
 import { getGlobalStyles } from '../../../AppConstants';
@@ -11,20 +7,6 @@ import { FlexRowContainer } from '../CustomCss';
 import { changeCleanCodeIndex } from '../../../store/actions/CardIndexAction';
 import { useDispatch } from 'react-redux';
 import { TEMPLATE_CONSTANTS } from '../../../TemplateConstants';
-// import { TEMPLATE_CONSTANTS } from '../../../TemplateConstants';
-
-const Heading = styled.div`
-	font-size: 2.5rem;
-`;
-
-const Subheading = styled.div`
-	font-size: 0.8rem;
-`;
-
-const Paragraph = styled.div`
-	align: center;
-	font-size: 1rem;
-`;
 
 const CardContainer = styled.div`
 	margin: 5rem 20rem 10rem 20rem;
@@ -69,12 +51,6 @@ const CustomCleanCodeCard = ({ cleanCodeSection = {} }) => {
 		);
 	};
 
-	const dispatchOnTabClick = (cleanCodeIndex, e) => {
-		// console.log('tab dispatch', tab);
-		dispatch(changeCleanCodeIndex(cleanCodeIndex));
-		e.preventDefault();
-		// currentTab = useSelector(state => state.tab);
-	};
 	return (
 		<>
 			<CardContainer>

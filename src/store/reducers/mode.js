@@ -1,4 +1,4 @@
-import { ModeTypes, TAB_NAMES } from '../../AppConstants';
+import { ModeTypes } from '../../AppConstants';
 import { ACTION_TYPE } from '../actiontypes';
 
 const initialState = {

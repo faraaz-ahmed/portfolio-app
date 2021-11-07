@@ -1,4 +1,3 @@
-import { Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 export const FlexRowContainer = styled.div`
@@ -6,7 +5,6 @@ export const FlexRowContainer = styled.div`
 	flex-direction: row;
 	justify-content: center !important;
 	align-content: center !important;
-	// align-items: center !important;
 	flex-gap: 0.01rem !important;
 `;
 

@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import HomeNavBar from './components/navbar';
 import styled from 'styled-components';
 import Content from './components/Content';
-import darkBackground from './assets/images/blue-background-shade.png';
-import lightBackground from './assets/images/cucumber-background-shade.png';
 import { getGlobalStyles } from './AppConstants';
 import { useSelector } from 'react-redux';
 import Footer from './components/Footer';
 
 const Background = styled.div`
-	// border: 1px solid #000;
-	// background-image: url(${(props) => props.backgroundImage});
 	background: ${(props) => props.background.field1 ?? ''};
 	background: ${(props) => props.background.field2 ?? ''};
 	height: 200vh;
-	// padding: -1rem !important;
-	// margin: -1rem !important;
 `;
 
 export const CustomText = styled.div`

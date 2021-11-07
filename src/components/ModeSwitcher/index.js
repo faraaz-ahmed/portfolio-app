@@ -7,7 +7,6 @@ const ModeSwitcher = () => {
 	const { mode } = useSelector((state) => state.mode);
 
 	const dispatchOnClick = () => {
-		console.log(' mode action dispatched');
 		dispatch(toggleMode(mode));
 	};
 
@@ -17,16 +16,6 @@ const ModeSwitcher = () => {
 				<input type='checkbox' onClick={dispatchOnClick}></input>
 				<span className='slider round'></span>
 			</label>
-
-			{/*  <!-- Social Icons --> */}
-			{/* <div class="social-icons">
-        <a href="https://twitter.com/VisnuRavichand1" target="_blank">
-          <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
-        </a>
-        <a href="https://dribbble.com/visnuravichandran" target="_blank">
-          <img src="https://img.icons8.com/office/30/000000/dribbble.png" />
-        </a>
-      </div> */}
 		</>
 	);
 };
