@@ -10,12 +10,11 @@ import { useSelector } from 'react-redux';
 import Footer from './components/Footer';
 
 const Background = styled.div`
-	border: 1px solid #000;
+	// border: 1px solid #000;
 	// background-image: url(${(props) => props.backgroundImage});
 	background: ${(props) => props.background.field1 ?? ''};
 	background: ${(props) => props.background.field2 ?? ''};
-	height: 120vh;
-	width: 100rem;
+	height: 200vh;
 `;
 
 export const CustomText = styled.div`
